@@ -1,0 +1,142 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-image: url("../assets/images/bg-web.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* width: calc(100% - 100px); */
+    padding: 0 50px;
+    min-height: 100vh;
+}
+
+.logo {
+    max-width: 344px;
+    width: 100%;
+    margin: 50px 0 30px 0;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.title {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: "Futura PT Cond Extra";
+    font-style: italic;
+    text-align: center;
+}
+
+.wheel {
+    max-width: 505px;
+    width: 100%;
+    margin: 40px 0 0 0;
+    z-index: 2;
+    position: relative;
+}
+
+.wheel-circle {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: rotate(0deg) scale(0.65);
+    z-index: 0;
+}
+
+.wheel-image {
+    position: relative;
+    z-index: 1;
+}
+
+.wheel img {
+    width: 100%;
+}
+
+.wheel-tr {
+    transition: transform 5s;
+}
+
+.rotate {
+    transform: rotate(3678deg) scale(0.65);
+}
+
+.action-button {
+    background: #9f0112;
+    padding: 6px 40px;
+    line-height: normal;
+    border-radius: 50px;
+    border: none;
+    color: #fff;
+    font-size: 35px;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-family: "Futura PT Cond Extra";
+    cursor: pointer;
+    -webkit-box-shadow: 10px 10px 7px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 7px -7px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 7px -7px rgba(0, 0, 0, 0.75);
+    letter-spacing: 2px;
+    transition: all 0.3s;
+    z-index: 2;
+}
+
+.action-button:hover {
+    /* background: linear-gradient(180deg, #8e0010 0%, #a50113 70.33%, #86000f 126.67%); */
+    box-shadow:
+        0px 0px 1.64158px 0px #f00,
+        0px 0px 3.28317px 0px #f00,
+        0px 0px 11.49108px 0px #f00,
+        0px 0px 22.98217px 0px #f00,
+        0px 0px 20.398px 0px #f00,
+        0px 0px 40.9465px 0px #f00;
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    max-width: 1380px;
+    width: 100%;
+    justify-content: space-between;
+    gap: 78px;
+    margin: 50px 0 20px 0;
+    margin-top: auto;
+    margin-top: 20px;
+}
+
+.payments,
+.crypto {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.payments {
+    width: 100%;
+    justify-content: space-between;
+    /* margin-top: 20px; */
+}
+
+.crypto {
+    /* gap: 78px; */
+    width: 30%;
+    justify-content: space-between;
+}
+
+.payments img,
+.crypto img {
+    object-fit: contain;
+}
